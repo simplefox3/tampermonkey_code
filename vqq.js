@@ -2,7 +2,7 @@
 // @name         腾讯视频解析
 // @namespace    https://github.com/liuguangw
 // @version      0.1
-// @description  解析B站视频地址
+// @description  解析腾讯视频地址
 // @updateURL    https://raw.githubusercontent.com/liuguangw/tampermonkey_code/master/vqq.js
 // @author       liuguang
 // @match        *://v.qq.com/*
@@ -42,7 +42,7 @@
     function insertCssStyle() {
         let cssContent = `.modal-main {
     width: 300px;
-    height: 500px;
+    height: 310px;
     position: absolute;
     left: 30px;
     top: 87px;
@@ -62,7 +62,7 @@
     display: block;
     font-size: 16px;
     line-height: 1.3;
-    color: #212121;
+    color: #fbdce4;
 }
 .modal-main a.video-node:hover,
  .modal-main a.audio-node:hover{
