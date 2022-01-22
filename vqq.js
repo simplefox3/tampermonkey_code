@@ -123,13 +123,12 @@ color: #00a1d6;
         dialogEl.appendChild(videoTitleEl);
         let videoContainerEl = document.createElement("div");
         videoContainerEl.className = "video-container";
-        for (let i = 0; i < fiList.length; i++) {
-            let fiInfo = fiList[i];
+        for (let i = 0; i < m3u8UrlList.length; i++) {
             let linkEl = document.createElement("a");
             linkEl.className = "video-node";
             linkEl.target = "_blank";
             linkEl.href = m3u8UrlList[i].url;
-            linkEl.innerText = fiInfo.cname;
+            linkEl.innerText = "source #" + i;
             videoContainerEl.appendChild(linkEl);
         }
         dialogEl.appendChild(videoContainerEl);
