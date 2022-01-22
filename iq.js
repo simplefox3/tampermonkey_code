@@ -7,6 +7,7 @@
 // @match        *://www.iqiyi.com/*
 // @match        *://cache.video.iqiyi.com/*
 // @grant        none
+// @run-at       document-start
 // ==/UserScript==
 
 (function () {
@@ -146,7 +147,6 @@
     addXMLRequestCallback(function (xhr) {
         xhr.addEventListener("load", function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
-				console.log(xhr.responseURL);
                 if (xhr.responseURL.indexOf('/dash') !== -1) {
                     onMediaInfoLoaded(xhr.response);
                 }

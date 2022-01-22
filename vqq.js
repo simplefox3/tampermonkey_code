@@ -7,6 +7,7 @@
 // @author       liuguang
 // @match        *://v.qq.com/*
 // @grant        none
+// @run-at       document-start
 // ==/UserScript==
 
 (function () {

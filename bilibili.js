@@ -7,6 +7,7 @@
 // @author       liuguang
 // @match        *://*.bilibili.com/*
 // @grant        none
+// @run-at       document-start
 // ==/UserScript==
 
 (function () {
